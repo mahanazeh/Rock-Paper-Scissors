@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title> screen 1</title>
+  <link href="fontawesome-free-6.1.2-web/css/all.min.css" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+
+<body>
+  <header class="header">
+      <h1 class="heading-main">
+         <img src="images/logo.svg">
+      </h1>
+      <div class="header__score-box">
+          <h4 class="heading-custom">Score</h4>
+          <span class="header__value">12</span>
+      </div>
+  </header>
+
+
+  
+  <main>
+      <!-- Game Container -->
+      <div class="game-body">
+          <img class="bg-triangle" src="images/bg-triangle.svg" alt="BG Triangle">
+          <!-- Game Item -->
+          <div class="game-body__circle-container-paper">
+              <div class="game-body__big-circle game-body__big-circle--dark-blue">
+                  <div class="game-body__big-circle game-body__big-circle--light-blue"></div>
+                  <div class="game-body__tiny-circle game-body__tiny-circle--dark-white">
+                      <div class="game-body__tiny-circle game-body__tiny-circle--light-white"></div>
+                  </div>
+                  <img class="content-icon" src="images/icon-paper.svg">
+              </div>
+          </div>
+          <!-- Game Item -->
+          <div class="game-body__circle-container-scissors">
+              <div class="game-body__big-circle game-body__big-circle--dark-yellow">
+                  <div class="game-body__big-circle game-body__big-circle--light-yellow"></div>
+                  <div class="game-body__tiny-circle game-body__tiny-circle--dark-white">
+                      <div class="game-body__tiny-circle game-body__tiny-circle--light-white"></div>
+                  </div>
+                  <img class="content-icon" src="images/icon-scissors.svg">
+              </div>
+          </div>
+          <!-- Game Item -->
+          <div class="game-body__circle-container-rock">
+              <div class="game-body__big-circle game-body__big-circle--dark-red">
+                  <div class="game-body__big-circle game-body__big-circle--light-red"></div>
+                  <div class="game-body__tiny-circle game-body__tiny-circle--dark-white">
+                      <div class="game-body__tiny-circle game-body__tiny-circle--light-white"></div>
+                  </div>
+                  <img class="content-icon" src="images/icon-rock.svg">
+              </div>
+          </div>
+          <!-- BIG Circle -->
+          <div class="choosed-item--com__bg-circle"></div>
+      </div>
+      <a href="#" class="rules-btn">Rules</a>
+  </main>
+
+
+  <div class="rules-popup">
+      <h3 class="rules-heading">Rules</h3>
+      <div class="rules-content"><img src="images/image-rules.svg"></div>
+      <div class="close-icon"><i class="fa-solid fa-x"></i></div>
+  </div>
+  <div class="overlay"></div>
+  <script src="main.js"></script>
+</body>
+</html>
